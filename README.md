@@ -29,14 +29,6 @@
 
 ---
 
-## 🖥️ Screenshots
-
-| Homepage | Search Results |
-|---|---|
-| Full-screen centered hero with gold serif logo | Sticky topbar + left-aligned result cards |
-
----
-
 ## 🏗️ Architecture
 
 ```
