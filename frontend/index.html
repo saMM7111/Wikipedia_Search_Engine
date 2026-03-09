@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Searchr</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hero" id="hero">
+    <a href="/" class="logo" id="logoHero">WSearch</a>
+    <div class="search-container" id="searchContainerHero">
+      <div class="ac-wrap">
+        <div class="input-row" id="inputRowHero">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="7.5"/><line x1="20" y1="20" x2="15.8" y2="15.8"/>
+          </svg>
+          <input
+            class="search-input"
+            id="searchInput"
+            type="text"
+            placeholder="How do I cook..."
+            autocomplete="off"
+            spellcheck="false"
+            autofocus
+          />
+          <div class="loading" id="loadingSpinner">
+            <div class="spinner"></div>
+          </div>
+        </div>
+        <div class="ac-drop" id="acDrop"></div>
+      </div>
+      <p class="hint-text" id="hintText">Press ⌘ <strong>Enter</strong> to search</p>
+    </div>
+  </div>
+
+  <header class="topbar hidden" id="topbar">
+    <a href="/" class="topbar-logo">Searchr</a>
+    <div class="topbar-search">
+      <div class="ac-wrap">
+        <div class="input-row input-row-sm">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="7.5"/><line x1="20" y1="20" x2="15.8" y2="15.8"/>
+          </svg>
+          <input
+            class="search-input search-input-sm"
+            id="searchInputTop"
+            type="text"
+            placeholder="Search..."
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <div class="loading" id="loadingSpinnerTop">
+            <div class="spinner"></div>
+          </div>
+        </div>
+        <div class="ac-drop ac-drop-top" id="acDropTop"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="results-main hidden" id="resultsMain">
+    <div class="results-inner">
+      <section id="resultsSection"></section>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
