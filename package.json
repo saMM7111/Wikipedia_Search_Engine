@@ -1,5 +1,5 @@
 {
-  "name": "searchr",
+  "name": "WSearch",
   "version": "3.0.0",
   "description": "Real-time Wikipedia search engine with BM25 ranking",
   "main": "server/server.js",
